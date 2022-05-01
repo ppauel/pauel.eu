@@ -29,7 +29,7 @@
         <span class="tooltiptext">GitHub</span>
       </div>
       <div class="link">
-        <a href="https://discord.gg/JCbVuaDg48" target="_blank">
+        <a href="https://discord.gg/Un86EhSaQ8" target="_blank">
           <?php echo file_get_contents("assets/discord.svg"); ?>
         </a>
         <span class="tooltiptext">Discord (German)</span>
