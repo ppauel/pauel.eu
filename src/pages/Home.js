@@ -31,7 +31,7 @@ function Home() {
 function SocialIcon(props) {
   return (
     <div className="social">
-      <a href={props.destination}>
+      <a target="_blank" rel="noreferrer" title={props.destination} href={props.destination}>
         <img alt="Project Banner" src={props.source} />
       </a>
       <span className="tooltip-text">{props.tooltip}</span>
