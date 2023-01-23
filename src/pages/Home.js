@@ -17,7 +17,7 @@ function Home() {
                     <h3 className="section-subtitle">i've been working on</h3>
                 </div>
                 <div className="projects">
-                    <Project imageUrl="/assets/projects/roles.png" destination="https://roles.bot" heading="Roles" description={<>The Roles Discord Bot offers unique features for managing a Discord server's roles and is used on more than 150 servers. Starting in 2021, together with Leon, we developed this project.</>} />
+                    <Project imageUrl="/assets/projects/roles.png" destination="https://roles.bot" heading="Roles Bot" description={<>The Roles Discord Bot offers unique features for managing a Discord server's roles and is used on more than 1,500 servers. Starting in 2021, together with <a href="https://leon.how" rel="noreferrer" target="_blank">Leon</a>, we developed this project.</>} />
                     <Project imageUrl="/assets/projects/community_architects.png" destination="https://communityarchitects.net" heading="Community Architects" description={<>A community committed to bringing together different community moderators, owners, designers and more from all platforms across the board into one place. I developed their website and Discord bot called "Bep".</>} />
                 </div>
             </main>
@@ -48,8 +48,8 @@ function Project(props) {
                 </a>
             </div>
             <div className="project-text">
-                <h4>{props.heading}</h4>
-                <h6>{props.description}</h6>
+            <a target="_blank" rel="noreferrer" title={props.destination} href={props.destination}><h4>{props.heading}</h4></a>
+                <p>{props.description}</p>
             </div>
         </div>
     )
