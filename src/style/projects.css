@@ -1,0 +1,112 @@
+.projects {
+    margin: 80px 0 0 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project {
+    border-radius: 25px;
+    padding: 30px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 30px;
+    min-height: 100%;
+    min-width: 200px;
+    /* min-height: 230px; */
+}
+
+.project h2 {
+    margin: 0 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.project p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.project-image {
+    min-width: 150px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+
+.project button.primary {
+    background-color: #1E1E22;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+}
+
+.project button.primary img {
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+.project button.primary:hover {
+    background-color: #2d2d34;
+}
+
+.project button.primary:active {
+    background-color: #434350;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .project-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .project {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project h2 {
+        font-size: 24px;
+    }
+
+    .project p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

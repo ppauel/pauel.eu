@@ -1,0 +1,91 @@
+* {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background-color: #100F17;
+    color: #ffffff;
+    font-family: 'Inter', 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0px 100px;
+}
+
+.app {
+    /* Debug */
+    /* background-color: #262430; */
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url('../../public/assets/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 130px;
+    margin: 160px 0 160px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #e3d2fe;
+    font-weight: 600;
+    transition: color .2s ease-in-out;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+h1.heading {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+p.description {
+    font-weight: 600;
+    font-size: 22px;
+    color: #e8eef6;
+}
+
+
+@media only screen and (max-width: 800px) {
+    body {
+        padding: 0px 50px;
+    }
+
+    header {
+        margin: 100px 0 90px 0;
+    }
+
+    .heading,
+    .description {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .heading {
+        font-size: 25px !important;
+    }
+
+    .description {
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        padding: 0px 15px;
+    }
+    
+    header {
+        margin: 30px 10px 50px 10px;
+    }
+}

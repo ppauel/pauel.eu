@@ -1,0 +1,80 @@
+.contact {
+    margin: 140px 0 0 0;
+    text-align: center;
+}
+
+.contact-icons {
+    margin: 50px 0 0 0;
+}
+
+.contact-icon {
+    position: relative;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.contact-icon img {
+    height: 60px;
+    opacity: .8;
+    transition: opacity .2s ease-in-out;
+}
+
+.contact-icon img:hover {
+    opacity: 1;
+}
+
+.contact-icon .tooltip-text {
+    font-weight: bold;
+    width: 120px;
+    background-color: #fff;
+    color: #1e1e1e;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: 50%;
+    margin-left: -60px;
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+.contact-icon .tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.contact-icon:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-icon .tooltip-text  {
+        display: none;
+    }
+
+    .contact {
+        margin: 100px 0 0 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-icon {
+        margin: 0 15px;
+    }
+
+    .contact-icon img {
+        height: 40px;
+    }
+}
