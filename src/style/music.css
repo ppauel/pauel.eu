@@ -9,7 +9,7 @@
 
 span.song {
     color: #9EFFB9;
-    background-image: url('../../public/assets/music/scan.svg');
+    background-image: url(../assets/music/scan.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-clip: padding-box;

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import '../style/projects.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { ReactComponent as WebSVG } from '../assets/projects/web.svg';
 
 function Project(props) {
     return (
@@ -13,10 +14,10 @@ function Project(props) {
                     </p>
                 </div>
                 <div className='project-footer'>
-                    <a target="_blank" rel="noreferrer" href={props.url}><button className='primary'><img alt='' src='/assets/projects/web.svg' /> {props.button}</button></a>
+                    <a target="_blank" rel="noreferrer" href={props.url}><button className='primary'><WebSVG /> {props.button}</button></a>
                 </div>
             </div>
-            {props.img ? <div className='project-image' style={{ backgroundImage: `url('/assets/projects/${props.img}')` }}></div> : <></>}
+            {props.img ? <div className='project-image' style={{ backgroundImage: `url(${props.img})` }}></div> : <></>}
         </AnimationOnScroll>
     );
 }

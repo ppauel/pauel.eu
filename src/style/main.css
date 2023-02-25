@@ -23,10 +23,7 @@ body {
 }
 
 header {
-    background-image: url('../../public/assets/logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    text-align: center;
     height: 130px;
     margin: 160px 0 160px 0;
 }
@@ -78,6 +75,10 @@ p.description {
     .description {
         font-size: 15px !important;
     }
+
+    header svg {
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -87,5 +88,9 @@ p.description {
     
     header {
         margin: 30px 10px 50px 10px;
+    }
+
+    header svg {
+        width: 200px;
     }
 }

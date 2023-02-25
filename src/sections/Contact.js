@@ -6,9 +6,9 @@ function Contact(props) {
         <div className="contact">
             <h1 className="heading">You can reach me here</h1>
             <div className="contact-icons">
-                <ContactIcon tooltip="Mail" destination="mailto:hello@pauel.eu" img="/assets/social/mail.svg" />
-                <ContactIcon tooltip="GitHub" destination="https://github.com/ppauel" img="/assets/social/github.svg" />
-                <ContactIcon tooltip="Discord" destination="https://discord.gg/Un86EhSaQ8" img="/assets/social/discord.svg" />
+                <ContactIcon tooltip="Mail" destination="mailto:hello@pauel.eu" img={require('../assets/social/mail.svg').default} />
+                <ContactIcon tooltip="GitHub" destination="https://github.com/ppauel" img={require('../assets/social/github.svg').default} />
+                <ContactIcon tooltip="Discord" destination="https://discord.gg/Un86EhSaQ8" img={require('../assets/social/discord.svg').default} />
             </div>
         </div>
     );
