@@ -16,9 +16,6 @@ function App() {
                 <Contact />
                 <Music />
             </main>
-            <footer>
-
-            </footer>
         </div>
     );
 }

@@ -6,7 +6,7 @@ function ContactIcon(props) {
         <div className="contact-icon">
             <a target="_blank" rel="noreferrer" href={props.destination}>
                 <AnimationOnScroll offset={50} animateOnce={true} animateIn="animate__fadeInUp">
-                    <img alt={props.tooltip} src={props.img} />
+                    <img alt={props.tooltip} draggable={false} src={props.img} />
                 </AnimationOnScroll>
             </a>
             <span className="tooltip-text">{props.tooltip}</span>
