@@ -15,9 +15,6 @@ body {
 }
 
 .app {
-    /* Debug */
-    /* background-color: #262430; */
-
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -35,6 +32,10 @@ a {
     transition: color .2s ease-in-out;
 }
 
+b {
+    font-weight: 800;
+}
+
 a:hover {
     color: #ffffff;
 }
@@ -50,6 +51,7 @@ p.description {
     color: #e8eef6;
 }
 
+/* Responsive */
 
 @media only screen and (max-width: 800px) {
     body {
@@ -85,7 +87,7 @@ p.description {
     body {
         padding: 0px 15px;
     }
-    
+
     header {
         margin: 30px 10px 50px 10px;
     }

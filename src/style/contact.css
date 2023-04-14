@@ -58,8 +58,10 @@
     opacity: 1;
 }
 
+/* Responsive */
+
 @media only screen and (max-width: 800px) {
-    .contact-icon .tooltip-text  {
+    .contact-icon .tooltip-text {
         display: none;
     }
 

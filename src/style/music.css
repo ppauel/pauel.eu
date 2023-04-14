@@ -17,6 +17,8 @@ span.song {
     padding: 0px 15px;
 }
 
+/* Responsive */
+
 @media only screen and (max-width: 800px) {
     .music {
         margin: 120px 0 75px 0;
