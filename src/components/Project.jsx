@@ -1,35 +1,54 @@
-import PropTypes from 'prop-types';
-import '../style/projects.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { ReactComponent as WebSVG } from '../assets/projects/web.svg';
+import { ReactComponent as GitHubSVG } from '../assets/social/github.svg';
+import '../style/projects.css';
 
-function Project(props) {
+/**
+ * Project section
+ * @param {Object} props
+ * @param {string} props.title Project title
+ * @param {string} props.bg Background color (resolvable color)
+ * @param {string | number} props.size Flex size
+ * @param {string?} props.website Website URL
+ * @param {string?} props.github GitHub URL
+ * @param {string?} props.img Image URL
+ */
+const Project = ({ title, bg, size, website, github, img, children }) => {
     return (
-            <AnimationOnScroll animatePreScroll={true} offset={50} className='project' style={{ backgroundColor: `${props.bg ?? '#5865F2'}`, flex: `${props.size ?? 100}` }} animateOnce={true} animateIn="animate__fadeInUp">
+        <AnimationOnScroll
+            className='project'
+            style={{ backgroundColor: `${bg ?? '#5865F2'}`, flex: `${size ?? 100}` }}
+            animatePreScroll={true} offset={50} animateOnce={true} animateIn='animate__fadeInUp'
+        >
             <div className='project-content'>
                 <div className='project-text'>
-                    <h2>{props.title}</h2>
+                    <h2>{title}</h2>
                     <p>
-                        {props.children}
+                        {children}
                     </p>
                 </div>
                 <div className='project-footer'>
-                    <a target="_blank" rel="noreferrer" href={props.url}><button className='primary'><WebSVG /> {props.button}</button></a>
+                    {website ?
+                        <a target='_blank' rel='noreferrer' href={website}>
+                            <button className='primary'><WebSVG /> Visit Website</button>
+                        </a>
+                        : null
+                    }
+
+                    {github ?
+                        <a target='_blank' rel='noreferrer' href={github}>
+                            <button className='primary'><GitHubSVG /> View on GitHub</button>
+                        </a>
+                        : null
+                    }
                 </div>
             </div>
-            {props.img ? <div className='project-image' style={{ backgroundImage: `url(${props.img})` }}></div> : <></>}
+            {img ?
+                <div className='project-image' style={{ backgroundImage: `url(${img})` }}></div>
+                : null
+            }
         </AnimationOnScroll>
     );
 }
-
-Project.propTypes = {
-    bg: PropTypes.string,
-    title: PropTypes.string,
-    type: PropTypes.number,
-    size: PropTypes.string,
-    url: PropTypes.string,
-    button: PropTypes.string,
-    img: PropTypes.string
-};
 
 export default Project;
