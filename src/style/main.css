@@ -22,7 +22,7 @@ body {
 header {
     text-align: center;
     height: 130px;
-    margin: 160px 0 160px 0;
+    margin: 160px 0 200px 0;
 }
 
 a {
@@ -32,23 +32,42 @@ a {
     transition: color .2s ease-in-out;
 }
 
+a:hover {
+    color: #ffffff;
+}
+
 b {
     font-weight: 800;
 }
 
-a:hover {
-    color: #ffffff;
+p {
+    line-height: 140%;
 }
 
 h1.heading {
     font-weight: 700;
     font-size: 35px;
+    margin-left: 30px;
+}
+
+h1.heading.center {
+    margin-left: 0px !important;
 }
 
 p.description {
     font-weight: 600;
     font-size: 22px;
     color: #e8eef6;
+}
+
+.no-touch {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 /* Responsive */
@@ -65,6 +84,10 @@ p.description {
     .heading,
     .description {
         text-align: center;
+    }
+
+    .heading {
+        margin-left: 0px !important;
     }
 }
 

@@ -1,0 +1,36 @@
+.about {
+    margin: 0 0 160px 0;
+    border-radius: 25px;
+    background-color: #242632;
+    border-top: 2px solid rgba(255, 255, 255, 0.273);
+    border-right: 2px solid rgba(255, 255, 255, 0.273);
+    padding: 30px 30px;
+    min-height: 100%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.about p {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+    color: #e8eef6;
+}
+
+.about img {
+    border: none;
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+    .about img {
+        display: none;
+    }
+}
