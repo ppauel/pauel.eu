@@ -7,7 +7,7 @@ import '../style/projects.css';
 const Projects = () => {
     return (
         <>
-            <h1 className='heading'>Projects & Work</h1>
+            <h1 className='heading' style={{ marginBottom: "calc(35px - 15px)" }}>Projects & Work</h1>
             <div className='projects'>
                 <Project
                     title='Community Architects'
