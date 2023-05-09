@@ -1,9 +1,4 @@
 .projects {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,11 +12,6 @@
     border-top: 2px solid rgba(255, 255, 255, 0.273);
     border-right: 2px solid rgba(255, 255, 255, 0.273);
     padding: 30px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -41,8 +31,31 @@
 .project p {
     font-size: 18px;
     font-weight: 500;
+    margin: 15px 0 20px 0;
 }
 
+.project-time {
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 15px 0 0 0;
+    padding: 5px 10px;
+    user-select: none;
+    cursor: default;
+    color: #1E1E22;
+}
+
+.project-time p {
+    font-weight: 700;
+    margin: 0;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.project-time svg {
+    vertical-align: -2px;
+    margin: 0 7px 0 0;
+}
 
 .project-content {
     width: 100%;

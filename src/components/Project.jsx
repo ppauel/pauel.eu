@@ -1,4 +1,5 @@
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { ReactComponent as Time } from '../assets/projects/time.svg';
 import { ReactComponent as WebSVG } from '../assets/projects/web.svg';
 import { ReactComponent as GitHubSVG } from '../assets/social/github.svg';
 import '../style/projects.css';
@@ -9,11 +10,12 @@ import '../style/projects.css';
  * @param {string} props.title Project title
  * @param {string} props.bg Background color (resolvable color)
  * @param {string | number} props.size Flex size
+ * @param {string} props.time Development timespan
  * @param {string?} props.website Website URL
  * @param {string?} props.github GitHub URL
  * @param {string?} props.img Image URL
  */
-const Project = ({ title, bg, size, website, github, img, children }) => {
+const Project = ({ title, bg, size, time, website, github, img, children }) => {
     return (
         <AnimationOnScroll
             className='project'
@@ -23,6 +25,9 @@ const Project = ({ title, bg, size, website, github, img, children }) => {
             <div className='project-content'>
                 <div className='project-text'>
                     <h2>{title}</h2>
+                    <div className='project-time'>
+                        <Time /><p> {time}</p>
+                    </div>
                     <p>
                         {children}
                     </p>

@@ -11,6 +11,7 @@ const Projects = () => {
             <div className='projects'>
                 <Project
                     title='Community Architects'
+                    time='2021 - now'
                     website='https://community-architects.net'
                     github='https://github.com/communityarchitects'
                     bg='#2F975F'
@@ -21,6 +22,7 @@ const Projects = () => {
                 </Project>
                 <Project
                     title='Discord Bot Template'
+                    time='2022'
                     github='https://github.com/ppauel/typescript-discord-bot'
                     bg='#db9053'
                     size='3'
@@ -32,6 +34,7 @@ const Projects = () => {
 
                 <Project
                     title='Naxite'
+                    time='2023'
                     website='https://nax.gg'
                     bg='#438be8'
                     size='2'
@@ -40,12 +43,13 @@ const Projects = () => {
                 </Project>
                 <Project
                     title='Roles Bot'
+                    time='2021 - now'
                     website='https://roles.bot'
                     bg='#865EDF'
                     size='8'
                     img={require('../assets/projects/roles-bot.svg').default}
                 >
-                    The Roles Discord Bot offers unique features for managing a Discord server's roles and is used on more than 2,000 servers. Since 2021 I'm working on this project together with <a target='_blank' rel='noreferrer' href='https://leon.how' >Leon</a>.
+                    The Roles Discord Bot offers unique features for managing a Discord server's roles and is used on more than 3,000 servers. Since 2021 I'm working on this project together with <a target='_blank' rel='noreferrer' href='https://leon.how' >Leon</a>.
                 </Project>
             </div>
         </>
