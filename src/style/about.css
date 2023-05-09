@@ -34,3 +34,9 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .about {
+        margin: 0 0 100px 0;
+    }
+}
