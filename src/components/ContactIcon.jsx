@@ -1,5 +1,3 @@
-import { AnimationOnScroll } from 'react-animation-on-scroll';
-
 /**
  * Contact icon with hover information
  * @param {Object} props
@@ -11,9 +9,7 @@ const ContactIcon = ({ destination, tooltip, img }) => {
     return (
         <div className='contact-icon'>
             <a target='_blank' rel='noreferrer' href={destination}>
-                <AnimationOnScroll offset={50} animateOnce={true} animateIn='animate__fadeInUp'>
-                    <img alt={tooltip} draggable={false} src={img} />
-                </AnimationOnScroll>
+                <img alt={tooltip} draggable={false} src={img} />
             </a>
             <span className='tooltip-text'>{tooltip}</span>
         </div>
