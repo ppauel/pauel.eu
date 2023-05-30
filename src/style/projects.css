@@ -9,8 +9,8 @@
 .project {
     margin: 15px;
     border-radius: 25px;
-    border-top: 2px solid rgba(255, 255, 255, 0.273);
-    border-right: 2px solid rgba(255, 255, 255, 0.273);
+    border-top: 3px solid rgba(255, 255, 255, 0.273);
+    border-right: 3px solid rgba(255, 255, 255, 0.273);
     padding: 30px;
     display: flex;
     flex-direction: row;
