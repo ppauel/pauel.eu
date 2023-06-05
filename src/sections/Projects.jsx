@@ -49,7 +49,7 @@ const Projects = () => {
                     size='8'
                     img={require('../assets/projects/roles-bot.svg').default}
                 >
-                    The Roles Discord Bot offers unique features for managing a Discord server's roles and is used on more than 3,000 servers. Since 2021 I'm working on this project together with <a target='_blank' rel='noreferrer' href='https://leon.how' >Leon</a>.
+                    The Roles Discord Bot offers unique features for managing a Discord server's roles and is used on more than 3,000 servers. Since 2021 I'm working on this project together with <a target='_blank' rel='noreferrer' href='https://leonbrn.eu' >Leon</a>.
                 </Project>
             </div>
         </>
