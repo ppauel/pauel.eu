@@ -1,5 +1,5 @@
 import 'animate.css/animate.min.css';
-import { ReactComponent as Logo } from './assets/logo.svg';
+// import { ReactComponent as Logo } from './assets/logo.svg';
 import About from './sections/About';
 import Contact from './sections/Contact';
 import Music from './sections/Music';
@@ -12,9 +12,9 @@ import './style/fonts.css';
 const App = () => {
     return (
         <div className='app'>
-            <header>
+{/*             <header>
                 <Logo />
-            </header>
+            </header> */}
             <main>
                 <About />
                 <Projects />
