@@ -83,37 +83,6 @@
     background-size: 80px;
 }
 
-.project button.primary {
-    border: none;
-    line-height: 24px;
-    background-color: #1E1E22;
-    color: #ffffff;
-    border-radius: 8px;
-    padding: 10px 25px;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    vertical-align: middle;
-    transition: background-color .2s ease-in-out;
-    -moz-transition: background-color .2s ease-in-out;
-    -webkit-transition: background-color .2s ease-in-out;
-}
-
-.project button.primary svg {
-    vertical-align: -3px;
-    height: 18px;
-    width: 18px;
-    margin-right: 5px;
-}
-
-.project button.primary:hover {
-    background-color: #2d2d34;
-}
-
-.project button.primary:active {
-    background-color: #434350;
-}
-
 .break {
     flex-basis: 100%;
     position: relative;

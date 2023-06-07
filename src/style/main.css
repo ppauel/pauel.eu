@@ -60,6 +60,55 @@ p.description {
     color: #e8eef6;
 }
 
+button {
+    border: none;
+    line-height: 24px;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out,;
+    -moz-transition: background-color .2s ease-in-out, color .2s ease-in-out,;
+    -webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out,;
+}
+
+button.primary {
+    background-color: #1E1E22;
+    color: #ffffff;
+}
+
+button.secondary {
+    background-color: #e8eef6;
+    color: #1E1E22;
+}
+
+button.primary svg {
+    vertical-align: -3px;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+button.primary:hover {
+    background-color: #2d2d34;
+}
+
+button.secondary:hover {
+    background-color: #ffffff;
+    color: #1E1E22;
+}
+
+button.primary:active {
+    background-color: #434350;
+}
+
+button.secondary:active {
+    background-color: #c1c1de;
+    color: #1E1E22;
+}
+
 .no-touch {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -82,7 +131,8 @@ p.description {
     }
 
     .heading,
-    .description {
+    .description,
+    .external {
         text-align: center;
     }
 
