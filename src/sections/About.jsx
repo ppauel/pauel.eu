@@ -16,8 +16,8 @@ const About = () => {
                         Apart from that, I occasionally attempt creating 3D <Color code='#ddb7ed'>graphic design</Color> and <Color code='#ddb7ed'>music</Color>.
                     </p>
                     <div className="external">
-                        <a href="https://www.behance.net/pauel" target="_blank" tabIndex={-1}>
-                            <button className="secondary" tabIndex={0}>View on Behance</button>
+                        <a href="https://dribbble.com/ppauel" target="_blank" tabIndex={-1}>
+                            <button className="secondary" tabIndex={0}>View on Dribbble</button>
                         </a>
                     </div>
                 </div>
