@@ -14,24 +14,32 @@
 }
 
 .about p {
-    font-weight: 600;
-    font-size: 22px;
-    margin: 0 0 20px 0;
-    color: #e8eef6;
+    margin: 0;
 }
 
-.about img {
-    border: none;
-    border-radius: 50%;
+.logo {
+    text-align: center;
+    margin: 0px 0 100px 0;
+}
+
+.logo img {
+    border-radius: 40px;
+    background-color: #4f6db0;
     height: 128px;
     width: 128px;
 }
 
 /* Responsive */
 
-@media only screen and (max-width: 800px) {
-    .about img {
-        display: none;
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin: 0px 0 50px 0;
+    }
+
+    .logo img {
+        height: 96px;
+        width: 96px;
+        border-radius: 30px;
     }
 }
 
