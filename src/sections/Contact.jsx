@@ -13,7 +13,7 @@ const Contact = () => {
                 <div className='contact-icons'>
                     <ContactIcon tooltip='Mail' destination='mailto:hello@pauel.eu' img={require('../assets/social/mail.svg').default} />
                     <ContactIcon tooltip='GitHub' destination='https://github.com/ppauel' img={require('../assets/social/github.svg').default} />
-                    <ContactIcon tooltip='Twitter' destination='https://twitter.com/_pauel' img={require('../assets/social/twitter.svg').default} />
+                    <ContactIcon tooltip='X' destination='https://twitter.com/_pauel' img={require('../assets/social/twitter.svg').default} />
                     <ContactIcon tooltip='Discord' destination='https://discord.gg/Un86EhSaQ8' img={require('../assets/social/discord.svg').default} />
                 </div>
             </AnimationOnScroll>
