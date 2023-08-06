@@ -13,9 +13,7 @@ const About = () => {
             <div className="about">
                 <div>
                     <p className="description">
-                        I'm Paul, an 18 years old developer from Germany. I have experience in creating websites based on React.js or PHP.
-                        My bots & applicationsare primarily written in TypeScript.
-                        Apart from that, I occasionally attempt creating <a href="https://dribbble.com/ppauel" target="_blank">3D graphic design</a> and music.
+                    I'm Paul, an 18-year-old student living in Germany. I mainly gain experience in web & app development and occasionally experiment with <a href="https://dribbble.com/ppauel" target="_blank">graphic design</a> and music production.
                     </p>
                 </div>
             </div>
