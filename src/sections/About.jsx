@@ -7,7 +7,7 @@ const About = () => {
     return (
         <>
             <div className="logo">
-                <img draggable={false} className="no-touch" src={require('../assets/profile.png')} />
+                <img alt='Avatar' draggable={false} className="no-touch" src={require('../assets/profile.png')} />
             </div>
             <h1 className='heading'>About Me</h1>
             <div className="about">
