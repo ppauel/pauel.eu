@@ -96,6 +96,8 @@
     grid-template-columns: 2fr 1fr 2fr;
     gap: 10px;
     height: 40px;
+    user-select: none;
+    -webkit-user-select: none;
   }
 
   ul {
