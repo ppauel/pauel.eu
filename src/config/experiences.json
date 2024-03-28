@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Languages",
+    "contents": [
+      "JavaScript / TypeScript",
+      "Scala",
+      "PHP",
+      "Swift"
+    ]
+  },
+  {
+    "name": "Frameworks",
+    "contents": [
+      "Svelte",
+      "React",
+      "Drupal",
+      "Express"
+    ]
+  },
+  {
+    "name": "Applications",
+    "contents": [
+      "Nginx",
+      "Apache",
+      "MySQL",
+      "Git"
+    ]
+  }
+]
