@@ -1,72 +1,92 @@
 <script lang="ts">
-    import GitHubIcon from '@assets/github.svg.svelte';
-    import LinkedInIcon from '@assets/linkedin.svg.svelte';
-    import XIcon from '@assets/x.svg.svelte';
-    import Socials from '@config/socials.json';
-    import Menu from '@config/menu.json';
-    import type {MenuItem} from "@types";
-    import {scrollToAnchor} from "$lib";
-    import { fly } from 'svelte/transition';
-    import { quintOut } from 'svelte/easing';
+  import GitHubIcon from "@assets/github.svg.svelte";
+  import LinkedInIcon from "@assets/linkedin.svg.svelte";
+  import XIcon from "@assets/x.svg.svelte";
+  import Socials from "@config/socials.json";
+  import Menu from "@config/menu.json";
+  import type { MenuItem } from "@types";
+  import { scrollToAnchor } from "$lib";
+  import { fly } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
 
-    let scrollY = 0;
-    const menuItems: MenuItem[] = Menu;
-    let headerOffset: number;
+  let scrollY = 0;
+  const menuItems: MenuItem[] = Menu;
+  let headerOffset: number;
 </script>
 
-<svelte:window bind:scrollY={scrollY} />
+<svelte:window bind:scrollY />
 
-<div class:scrolled={scrollY > headerOffset} class="header-wrapper" bind:offsetHeight={headerOffset}>
-    <header>
+<div
+  class:scrolled={scrollY > headerOffset}
+  class="header-wrapper"
+  bind:offsetHeight={headerOffset}
+>
+  <header>
+    <nav id="menu">
+      <ul role="menubar">
+        {#each menuItems as menuItem}
+          <li role="menuitem">
+            <a
+              href="/#{menuItem.value}"
+              on:click|preventDefault={() => {
+                scrollToAnchor(menuItem.value, headerOffset);
+              }}
+            >
+              {menuItem.name}
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </nav>
 
-        <nav id="menu">
-            <ul role="menubar">
-                {#each menuItems as menuItem}
-                    <li role="menuitem">
-                        <a href="/#{menuItem.value}"
-                           on:click|preventDefault={() => {
-                               scrollToAnchor(menuItem.value, headerOffset)
-                           }}
-                        >
-                            {menuItem.name}
-                        </a>
-                    </li>
-                {/each}
-            </ul>
-        </nav>
-
-        <div class="logo">
-            {#if scrollY >= 300}
-                <div
-                        transition:fly={{ delay: 0, duration: 300, y: -headerOffset, opacity: 0.5, easing: quintOut }}
-                >
-                    <a href="#top" on:click|preventDefault={() => {scrollToAnchor("html", headerOffset)}}>
-                        <img draggable="false" loading="lazy" alt="pauel" src="https://github.com/ppauel.png" />
-                    </a>
-                </div>
-            {/if}
+    <div class="logo">
+      {#if scrollY >= 300}
+        <div
+          transition:fly={{
+            delay: 0,
+            duration: 300,
+            y: -headerOffset,
+            opacity: 0.5,
+            easing: quintOut,
+          }}
+        >
+          <a
+            href="#top"
+            on:click|preventDefault={() => {
+              scrollToAnchor("html", headerOffset);
+            }}
+          >
+            <img
+              draggable="false"
+              loading="lazy"
+              alt="pauel"
+              src="https://github.com/ppauel.png"
+            />
+          </a>
         </div>
+      {/if}
+    </div>
 
-        <ul class="socials">
-            <li>
-                <a rel="noreferrer" target="_blank" href={Socials.github}>
-                    <GitHubIcon />
-                </a>
-            </li>
-            <!--
+    <ul class="socials">
+      <li>
+        <a rel="noreferrer" target="_blank" href={Socials.github}>
+          <GitHubIcon />
+        </a>
+      </li>
+      <!--
             <li>
                 <a rel="noreferrer" target="_blank" href={Socials.linkedin}>
                     <LinkedInIcon />
                 </a>
             </li>
             -->
-            <li>
-                <a rel="noreferrer" target="_blank" href={Socials.x}>
-                    <XIcon />
-                </a>
-            </li>
-        </ul>
-    </header>
+      <li>
+        <a rel="noreferrer" target="_blank" href={Socials.x}>
+          <XIcon />
+        </a>
+      </li>
+    </ul>
+  </header>
 </div>
 
 <style lang="scss">
@@ -80,7 +100,7 @@
     top: 0;
     width: 100%;
     margin: 0;
-    transition: box-shadow .2s ease;
+    transition: box-shadow 0.2s ease;
 
     &.scrolled {
       border-bottom: 1px solid var(--color-stroke);
@@ -120,8 +140,8 @@
 
     li a {
       color: var(--color-text);
-      opacity: .8;
-      transition: opacity .2s ease;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
       padding: 15px 0;
       font-size: 17px;
 
@@ -142,7 +162,7 @@
       width: auto;
       padding: 1px;
       vertical-align: middle;
-      opacity: .7;
+      opacity: 0.7;
 
       &:hover {
         opacity: 1;
@@ -167,7 +187,7 @@
       height: 30px;
       aspect-ratio: 1 / 1;
       border-radius: 50%;
-      transition: transform .1s ease;
+      transition: transform 0.1s ease;
       @include loading;
 
       &:hover {
@@ -202,3 +222,4 @@
     }
   }
 </style>
+

@@ -1,19 +1,21 @@
 <script lang="ts">
-    import type {Writable} from "svelte/store";
+  import type { Writable } from "svelte/store";
 
-    export let store: Writable<number>;
-    export let options: string[];
+  export let store: Writable<number>;
+  export let options: string[];
 </script>
 
 <div class="view-switcher">
-    {#each options as option, index}
-        <button
-                class:active={$store === index}
-                on:click={(e) => { store.set(index) }}
-        >
-            {option}
-        </button>
-    {/each}
+  {#each options as option, index}
+    <button
+      class:active={$store === index}
+      on:click={() => {
+        store.set(index);
+      }}
+    >
+      {option}
+    </button>
+  {/each}
 </div>
 
 <style lang="scss">
@@ -35,8 +37,8 @@
       padding: 0;
       font-size: 1em;
       font-weight: bold;
-      opacity: .6;
-      transition: opacity .1s ease;
+      opacity: 0.6;
+      transition: opacity 0.1s ease;
       color: var(--color-text);
     }
   }
@@ -46,3 +48,4 @@
     opacity: 1;
   }
 </style>
+

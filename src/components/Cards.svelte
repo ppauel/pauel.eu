@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type {Project} from "@types";
+    import type { Project } from "@types";
     import ClockIcon from "@assets/clock.svg.svelte";
     import Card from "@components/Card.svelte";
 
@@ -9,12 +9,12 @@
 <div class="cards-wrapper">
     <div class="cards">
         {#each projects as project}
-            <Card project={project} />
+            <Card {project} />
         {/each}
     </div>
 </div>
 
-<style>
+<style lang="scss">
     .cards-wrapper {
         width: 100%;
         position: relative;
@@ -32,3 +32,4 @@
         }
     }
 </style>
+
