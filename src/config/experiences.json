@@ -3,9 +3,9 @@
     "name": "Languages",
     "contents": [
       "JavaScript / TypeScript",
+      "Swift",
       "Scala",
-      "PHP",
-      "Swift"
+      "PHP"
     ]
   },
   {
@@ -13,15 +13,15 @@
     "contents": [
       "Svelte",
       "React",
-      "Drupal",
-      "Express"
+      "Vapor",
+      "Drupal"
     ]
   },
   {
     "name": "Applications",
     "contents": [
+      "Docker",
       "Nginx",
-      "Apache",
       "MySQL",
       "Git"
     ]
